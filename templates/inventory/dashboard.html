@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head><title>Material Stock Dashboard</title></head>
+<body>
+  <h1>Material Stock Dashboard</h1>
+  <p><a href="/admin/">Admin</a> | <a href="/stock-entry/">Add Stock</a> | <a href="/report/">View Report</a></p>
+
+  <table border="1" cellpadding="6" cellspacing="0">
+    <tr><th>Material</th><th>Category</th><th>Total Stock</th><th>Unit</th></tr>
+    {% for m in materials %}
+    <tr>
+      <td>{{ m.name }}</td>
+      <td>{{ m.category.name }}</td>
+      <td>{{ m.total_stock }}</td>
+      <td>{{ m.unit }}</td>
+    </tr>
+    {% empty %}
+    <tr><td colspan="4">No materials yet.</td></tr>
+    {% endfor %}
+  </table>
+</body>
+</html>

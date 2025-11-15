@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head><title>Add Stock</title></head>
+<body>
+  <h1>Add Stock</h1>
+  <form method="post">
+    {% csrf_token %}
+    <label>Material:</label>
+    <select name="material">
+      {% for m in materials %}
+        <option value="{{ m.id }}">{{ m.name }} ({{ m.total_stock }} {{ m.unit }})</option>
+      {% endfor %}
+    </select><br><br>
+
+    <label>Quantity:</label>
+    <input type="number" name="qty" step="0.01" required><br><br>
+
+    <label>Type:</label>
+    <select name="type">
+      <option value="IN">Stock IN</option>
+      <option value="OUT">Stock OUT</option>
+    </select><br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <p><a href="/">Back to Dashboard</a></p>
+</body>
+</html>

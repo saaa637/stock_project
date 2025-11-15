@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head><title>Stock Report</title></head>
+<body>
+  <h1>Stock Report</h1>
+  <p><a href="/">Dashboard</a> | <a href="/stock-entry/">Add Stock</a> | <a href="/admin/">Admin</a></p>
+
+  <h2>Current Totals</h2>
+  <table border="1" cellpadding="6" cellspacing="0">
+    <tr><th>Material</th><th>Unit</th><th>Total Stock</th></tr>
+    {% for t in totals %}
+    <tr>
+      <td>{{ t.name }}</td>
+      <td>{{ t.unit }}</td>
+      <td>{{ t.total_stock }}</td>
+    </tr>
+    {% empty %}
+    <tr><td colspan="3">No materials.</td></tr>
+    {% endfor %}
+  </table>
+
+  <h2>Recent Entries</h2>
+  <table border="1" cellpadding="6" cellspacing="0">
+    <tr><th>Date</th><th>Material</th><th>Qty</th><th>Type</th></tr>
+    {% for e in entries %}
+    <tr>
+      <td>{{ e.date }}</td>
+      <td>{{ e.material.name }}</td>
+      <td>{{ e.quantity }}</td>
+      <td>{{ e.type }}</td>
+    </tr>
+    {% empty %}
+    <tr><td colspan="4">No entries.</td></tr>
+    {% endfor %}
+  </table>
+</body>
+</html>
