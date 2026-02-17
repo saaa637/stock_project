@@ -24,9 +24,7 @@ How to run (on your machine)
 5. Run the development server:
    python manage.py runserver 0.0.0.0:8000
 
-6. Open in browser:
-   http://127.0.0.1:8000/   (dashboard)
-   http://127.0.0.1:8000/admin/  (admin panel)
+
 
 Notes:
 - Change SECRET_KEY in stockproject/settings.py for production.
