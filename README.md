@@ -1,6 +1,6 @@
-# 📦 Material Stock Report — Django
+#  Material Stock Report — Django
 
-## 📌 Project Overview
+##  Project Overview
 
 The **Material Stock Report** is a Django-based web application designed to manage and monitor material inventory records.
 
@@ -10,7 +10,7 @@ The application is currently structured as a **Django skeleton project**, provid
 
 ---
 
-# 🎯 Project Objectives
+#  Project Objectives
 
 The main objectives of this project are:
 
@@ -24,7 +24,7 @@ The main objectives of this project are:
 
 ---
 
-# 🏗️ System Architecture
+#  System Architecture
 
 ```text
                     User / Admin
@@ -57,9 +57,9 @@ The main objectives of this project are:
 
 ---
 
-# 🚀 Key Features
+#  Key Features
 
-## 🗂️ Category Management
+##  Category Management
 
 The application includes a `Category` model for organizing materials into logical groups.
 
@@ -79,7 +79,7 @@ Materials
 
 ---
 
-# 📦 Material Management
+#  Material Management
 
 The `Material` model provides the basic structure for maintaining inventory material information.
 
@@ -95,7 +95,7 @@ Category
 
 ---
 
-# 📥 Stock Entry Management
+#  Stock Entry Management
 
 The `StockEntry` model is designed to record stock-related transactions.
 
@@ -113,7 +113,7 @@ This can later be extended to support:
 
 ---
 
-# 📊 Dashboard
+#  Dashboard
 
 The project includes a basic dashboard template:
 
@@ -135,7 +135,7 @@ Low Stock Items
 
 ---
 
-# 📑 Stock Report
+#  Stock Report
 
 A basic report template is included for stock-related reporting.
 
@@ -150,7 +150,7 @@ The reporting module can be extended to provide:
 
 ---
 
-# 🛠️ Technology Stack
+#  Technology Stack
 
 | Technology       | Purpose                   |
 | ---------------- | ------------------------- |
@@ -164,7 +164,7 @@ The reporting module can be extended to provide:
 
 ---
 
-# 🗄️ Data Model
+#  Data Model
 
 The application contains three primary models.
 
@@ -188,13 +188,13 @@ The application contains three primary models.
 
 ---
 
-## 1️⃣ Category
+## 1️ Category
 
 The `Category` model is used to organize materials into different inventory categories.
 
 ---
 
-## 2️⃣ Material
+## 2️ Material
 
 The `Material` model represents individual inventory materials.
 
@@ -202,7 +202,7 @@ Materials can be associated with a category.
 
 ---
 
-## 3️⃣ StockEntry
+## 3️ StockEntry
 
 The `StockEntry` model represents stock-related records associated with materials.
 
@@ -210,7 +210,7 @@ This provides the foundation for maintaining stock movement history.
 
 ---
 
-# 📂 Project Structure
+#  Project Structure
 
 ```text
 Material-Stock-Report/
@@ -245,7 +245,7 @@ Material-Stock-Report/
 
 ---
 
-# 🔄 Application Workflow
+#  Application Workflow
 
 The basic application workflow can be represented as:
 
@@ -269,7 +269,7 @@ Categories      Stock Records
 
 ---
 
-# 🔐 Django Admin
+#  Django Admin
 
 The project's inventory models are registered with **Django Admin**.
 
@@ -283,7 +283,7 @@ This is particularly useful during development and testing.
 
 ---
 
-# ⚙️ Installation & Setup
+#  Installation & Setup
 
 ## Prerequisites
 
@@ -296,7 +296,7 @@ Make sure the following are installed:
 
 ---
 
-# 1️⃣ Clone the Repository
+# 1️ Clone the Repository
 
 ```bash
 git clone <your-github-repository-url>
@@ -305,7 +305,7 @@ cd Material-Stock-Report
 
 ---
 
-# 2️⃣ Create a Virtual Environment
+# 2️ Create a Virtual Environment
 
 ### Linux / macOS
 
@@ -323,7 +323,7 @@ venv\Scripts\activate
 
 ---
 
-# 3️⃣ Install Dependencies
+# 3️ Install Dependencies
 
 Install the required packages:
 
@@ -333,7 +333,7 @@ pip install -r requirements.txt
 
 ---
 
-# 4️⃣ Apply Database Migrations
+# 4️ Apply Database Migrations
 
 Run:
 
@@ -345,7 +345,7 @@ This creates the required Django database tables.
 
 ---
 
-# 5️⃣ Create Django Superuser
+# 5️ Create Django Superuser
 
 Create an administrator account:
 
@@ -361,7 +361,7 @@ Follow the terminal instructions to configure:
 
 ---
 
-# 6️⃣ Run the Development Server
+# 6️ Run the Development Server
 
 Start the Django server:
 
@@ -373,7 +373,7 @@ The application can then be accessed through the local browser.
 
 ---
 
-# 🔐 Production Configuration
+#  Production Configuration
 
 The current project configuration is intended for **development purposes**.
 
@@ -418,7 +418,7 @@ Additional production configuration should also be added for:
 
 ---
 
-# 📊 Reporting Workflow
+#  Reporting Workflow
 
 The reporting functionality is structured around stock records.
 
@@ -439,23 +439,23 @@ The report module can be expanded to provide more advanced inventory analytics.
 
 ---
 
-# ⭐ Key Highlights
+#  Key Highlights
 
-* 📦 Material inventory management foundation
-* 🗂️ Category management
-* 📥 Stock entry management
-* 📊 Dashboard template
-* 📑 Stock report template
-* 🔐 Django Admin integration
-* 🗄️ Django ORM
-* 🐍 Python Django backend
-* 🗃️ Database migration support
-* 🧩 Modular Django application structure
-* 🔧 Easily extendable inventory architecture
+*  Material inventory management foundation
+*  Category management
+*  Stock entry management
+*  Dashboard template
+*  Stock report template
+*  Django Admin integration
+*  Django ORM
+*  Python Django backend
+*  Database migration support
+*  Modular Django application structure
+*  Easily extendable inventory architecture
 
 ---
 
-# 💼 Business Use Case
+#  Business Use Case
 
 A material stock management system can help organizations maintain structured inventory records.
 
@@ -473,9 +473,9 @@ The current project provides the foundation for these use cases and can be expan
 
 ---
 
-# 🚀 Future Enhancements
+#  Future Enhancements
 
-## 📊 Advanced Dashboard
+##  Advanced Dashboard
 
 Add real-time inventory KPIs such as:
 
@@ -489,7 +489,7 @@ Recent Transactions
 
 ---
 
-## ⚠️ Low Stock Alerts
+##  Low Stock Alerts
 
 Implement automatic alerts when material quantity falls below a predefined threshold.
 
@@ -500,12 +500,12 @@ Material: Steel Sheets
 Current Stock: 15
 Minimum Stock: 25
 
-⚠️ Low Stock Alert
+ Low Stock Alert
 ```
 
 ---
 
-## 📥 Stock In / Stock Out
+##  Stock In / Stock Out
 
 Extend the stock entry system to explicitly track:
 
@@ -519,7 +519,7 @@ Current Stock
 
 ---
 
-## 🔎 Search & Filtering
+##  Search & Filtering
 
 Add filtering options for:
 
@@ -531,7 +531,7 @@ Add filtering options for:
 
 ---
 
-## 📈 Advanced Reports
+##  Advanced Reports
 
 Future reports could include:
 
@@ -544,7 +544,7 @@ Future reports could include:
 
 ---
 
-## 📤 Export Functionality
+##  Export Functionality
 
 Add export support for:
 
@@ -556,7 +556,7 @@ This would make the reporting system more useful for business users.
 
 ---
 
-## 🔐 Role-Based Access
+##  Role-Based Access
 
 Introduce different user roles such as:
 
@@ -576,7 +576,7 @@ Staff
 
 ---
 
-# 📌 Project Information
+#  Project Information
 
 **Project Name:** Material Stock Report
 
@@ -598,7 +598,7 @@ Staff
 
 ---
 
-# 👨‍💻 Skills Demonstrated
+#  Skills Demonstrated
 
 This project demonstrates practical experience in:
 
@@ -619,6 +619,6 @@ This project demonstrates practical experience in:
 
 ---
 
-# 📄 License
+#  License
 
 This project is intended for educational, portfolio, and Django web development demonstration purposes.
